@@ -1,34 +1,27 @@
 # React Bare Minimum
 
-A bare minimum setup to work with react. Compiling and bundling, nothing else.
+A bare minimum setup to work with react and node. Compiling and bundling, nothing else.
 
 * It compiles ES6 code containing JSX syntax
 * It bundles your code to a single JavaScript file
-* There is a watcher running above two when you change a file
-* That's it all folks
-
----
-
-*I'm sick of copy-pasting files and configuring when writing blog posts related to React. I just wanted something small which I download and start using.*
-
----
 
 ## How to use it
 
-Just download the package. I don't see much of value in using `npm i react-bare-minimum` because the idea is to use it as a working directory.
+Just download the files and run:
 
-Once you have the files:
-
-* Make sure that you have a `.babelrc` file with content `{ "presets": ["react", "es2015"] }`
-
-* Run `npm i` (or `yarn install`).
+* `npm i`
 * `npm run build` (`yarn build`) for building the project once
 * `npm run watch` (`yarn watch`) for run the watcher
 
-When the build finishes check out the `public` folder. There is an `index.html` file and your bundled `app.js`.
+When the build finishes check out the `public` folder. There is an `index.html` file and a bundled `app.js`.
 
 ## Dependencies
 
+Backend:
+* `express`
+* `path`
+
+Frontend:
 * `babel-core`
 * `babel-preset-es2015`
 * `babel-preset-react`
@@ -40,5 +33,4 @@ When the build finishes check out the `public` folder. There is an `index.html` 
 
 ## Credit
 
-[The bare minimum to work with React article](http://krasimirtsonev.com/blog/article/The-bare-minimum-to-work-with-React)
-and [on Github](https://github.com/krasimir/react-bare-minimum/blob/master/package.json)
+[Github/krasimir](https://github.com/krasimir/react-bare-minimum/blob/master/package.json)
